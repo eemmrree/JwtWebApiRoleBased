@@ -25,7 +25,6 @@ namespace JwtWebApiRoleBased.Controllers
             user.PasswordHash = passwordHash;
             user.PasswordSalt = passwordSalt;
             user.Role = userDto.Role;
-
             return Ok(user);
         }
         [HttpPost("login")]
